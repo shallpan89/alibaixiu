@@ -1,9 +1,7 @@
 
-
 $('#avatar').on('change', function () {
     // console.log(this.files[0]);
     var formData = new FormData();
-
     formData.append('avatar', this.files[0]);
     $.ajax({
         type: 'post',
